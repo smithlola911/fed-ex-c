@@ -1,0 +1,22 @@
+if Package Received By FEDEX date is June 12, 2025 and Delivered date is July 28, 2025 what date will be on In Transit and Out for Delivery. package from North Carolina, USA to Delaware, usa
+
+June 12, 2025
+08:35:00 AM
+
+
+
+In Transit
+date
+time
+
+
+
+Out for Delivery
+date
+time
+
+
+
+Delivered to Delaware, usa
+July 28, 2025
+06:30:00 pm
