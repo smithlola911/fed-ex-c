@@ -1755,4 +1755,50 @@ export const mockPackages: Package[] = [
     estimated_delivery_time: '22:00:00',
     time_zone: 'America/Chicago'
   },
+  {
+    package_id: 'PKG039',
+    dateCreated: '10/10/2025', // m/d/y
+    sender: {
+      name: 'Rico Davis',
+      address: 'Houston, Texas',
+      contact_number: '*******',
+      email: '*******',
+    },
+    recipient: {
+      name: 'Brenda Judon',
+      address: '1704 E 60th St, Kansas City, Missouri 64110',
+      contact_number: '*******',
+      email: '*******'
+    },
+    tracking_number: 'Fedex/USA/25/0025655',
+    package_details: {
+      weight_kg: 10,
+      dimensions_cm: {
+        length: 30,
+        width: 20,
+        height: 15
+      },
+      courier: 'Fedex',
+      packages: 'Car',
+      quantity: '1',
+      paymentMode: 'Card',
+      origin: 'Houston, Texas, USA',
+      destination: 'Missouri, USA',
+      comment: 'Handle with care',
+      mode: 'Road',
+    },
+    // Y-M-D
+    package_received_date: '2025-10-10',
+    package_received_time: '11:00:00',
+    in_transit_date: '2025-10-13',
+    in_transit_time: '14:00:00',
+    out_for_delivery_date: '2025-10-17',
+    out_for_delivery_time: '13:45:00',
+    on_hold_date: '2025-10-15',
+    on_hold_time: '14:00:00',
+    on_hold_desc: 'Package on hold due to customs clearance.',
+    estimated_delivery_date: '2025-10-17',
+    estimated_delivery_time: '22:00:00',
+    time_zone: 'America/Chicago'
+  },
 ];
