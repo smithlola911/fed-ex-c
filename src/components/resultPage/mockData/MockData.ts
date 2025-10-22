@@ -1801,4 +1801,50 @@ export const mockPackages: Package[] = [
     estimated_delivery_time: '22:00:00',
     time_zone: 'America/Chicago'
   },
+  {
+    package_id: 'PKG040',
+    dateCreated: '10/22/2025', // m/d/y
+    sender: {
+      name: 'Tonya Wilson',
+      address: 'Dubai',
+      contact_number: '603-685-****',
+      email: '*******',
+    },
+    recipient: {
+      name: 'THOMAS M. FUSINSKI',
+      address: '17970 N. E. 31ST CT. APT #4100 AVENTURA, FLORIDA 3316',
+      contact_number: '904-406-****',
+      email: 'thomasfusi***@gmail.com'
+    },
+    tracking_number: 'Fedex/USA/25/0025656',
+    package_details: {
+      weight_kg: 10,
+      dimensions_cm: {
+        length: 30,
+        width: 20,
+        height: 15
+      },
+      courier: 'Fedex',
+      packages: '6 Bars of Gold',
+      quantity: '6',
+      paymentMode: 'Cash',
+      origin: 'Dubai',
+      destination: 'Aventura, Florida, USA',
+      comment: 'Handle with care',
+      mode: 'Road',
+    },
+    // Y-M-D
+    package_received_date: '2025-10-22',
+    package_received_time: '14:00:00',
+    in_transit_date: '2025-10-22',
+    in_transit_time: '16:00:00',
+    on_hold_date: '2025-10-23',
+    on_hold_time: '11:00:00',
+    on_hold_desc: 'Package on hold due to customs clearance.',
+    out_for_delivery_date: '2025-10-25',
+    out_for_delivery_time: '13:45:00',
+    estimated_delivery_date: '2025-10-25',
+    estimated_delivery_time: '22:00:00',
+    time_zone: 'America/Chicago'
+  },
 ];
