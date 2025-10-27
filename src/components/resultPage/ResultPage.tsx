@@ -151,7 +151,7 @@ export default function ResultPage({ packageInfo }: ResultPageProps) {
     return new Date(datetime).toLocaleTimeString(undefined, options);
   };
 
-   const getStatus = (step: number) => {
+  const getStatus = (step: number) => {
     if (step < 0) return 'Processing';
     if (step >= steps.length) return 'Processing';
     return steps[step].label;
@@ -170,23 +170,25 @@ export default function ResultPage({ packageInfo }: ResultPageProps) {
         </div>
         <div className="p-4 sm:px-2 rounded bg-[#858585] text-white mb-[30px] mt-[30px] text-center font-semibold">Tracking Number: [{packageInfo.tracking_number}] found.</div>
         <div className="border p-4 md:p-8 rounded-lg">
-          <div className="vertical-progress-container">
-            {steps.map((step, index) => (
-              <div key={index} className={`step ${index <= currentStep ? 'active' : ''}`}>
-                <div className={`circle ${step.label === 'On Hold' ? 'onHold' : ''}`}></div>
-                <div className="content">
-                  <p className={`label text-base font-semibold uppercase ${step.label === 'On Hold' ? 'text-red-600' : ''}`}>{step.label}</p>
-                  {step.datetime && (
-                    <p className="text-sm flex flex-col mt-1">
-                      {formatDate(step.datetime)}
-                      <span className="text-[13px]">{formatTime(step.datetime)}</span>
-                    </p>
-                  )}
-                  {step.label === 'On Hold' && packageInfo.on_hold_desc && <div className="max-w-[300px] mt-2 p-3 text-red-500 text-sm bg-yellow-100 rounded">{packageInfo.on_hold_desc}</div>}
+          {steps.length === 0 && (
+            <div className="vertical-progress-container">
+              {steps.map((step, index) => (
+                <div key={index} className={`step ${index <= currentStep ? 'active' : ''}`}>
+                  <div className={`circle ${step.label === 'On Hold' ? 'onHold' : ''}`}></div>
+                  <div className="content">
+                    <p className={`label text-base font-semibold uppercase ${step.label === 'On Hold' ? 'text-red-600' : ''}`}>{step.label}</p>
+                    {step.datetime && (
+                      <p className="text-sm flex flex-col mt-1">
+                        {formatDate(step.datetime)}
+                        <span className="text-[13px]">{formatTime(step.datetime)}</span>
+                      </p>
+                    )}
+                    {step.label === 'On Hold' && packageInfo.on_hold_desc && <div className="max-w-[300px] mt-2 p-3 text-red-500 text-sm bg-yellow-100 rounded">{packageInfo.on_hold_desc}</div>}
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
 
           {/* SENDER'S INFO */}
           <div>

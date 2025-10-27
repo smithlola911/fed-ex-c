@@ -1555,7 +1555,7 @@ export const mockPackages: Package[] = [
       origin: 'Springfield, IL',
       destination: 'Shelbyville, IL',
       comment: 'Handle with care',
-      mode: 'Road',
+      mode: 'Road'
     },
     // Y-M-D
     package_received_date: '2025-08-25',
@@ -1601,7 +1601,7 @@ export const mockPackages: Package[] = [
       origin: 'Hamburg, DE',
       destination: 'Williamsfield, OH',
       comment: 'Handle with care',
-      mode: 'Road',
+      mode: 'Road'
     },
     // Y-M-D
     package_received_date: '2025-09-09',
@@ -1647,7 +1647,7 @@ export const mockPackages: Package[] = [
       origin: 'Lincoln, NE',
       destination: 'Inglewood, CA',
       comment: 'Handle with care',
-      mode: 'Road',
+      mode: 'Road'
     },
     // Y-M-D
     package_received_date: '2025-09-03',
@@ -1693,7 +1693,7 @@ export const mockPackages: Package[] = [
       origin: 'Los Angeles, USA',
       destination: 'Michigan, USA',
       comment: 'Handle with care',
-      mode: 'Road',
+      mode: 'Road'
     },
     // Y-M-D
     package_received_date: '2025-09-20',
@@ -1716,7 +1716,7 @@ export const mockPackages: Package[] = [
       name: 'EDWARD TODD',
       address: '*******',
       contact_number: '*******',
-      email: '*******',
+      email: '*******'
     },
     recipient: {
       name: 'DENNIS JAMES RUSS',
@@ -1739,7 +1739,7 @@ export const mockPackages: Package[] = [
       origin: 'California, USA',
       destination: 'Missouri, USA',
       comment: 'Handle with care',
-      mode: 'Road',
+      mode: 'Road'
     },
     // Y-M-D
     package_received_date: '2025-09-26',
@@ -1762,7 +1762,7 @@ export const mockPackages: Package[] = [
       name: 'Rico Davis',
       address: 'Houston, Texas',
       contact_number: '*******',
-      email: '*******',
+      email: '*******'
     },
     recipient: {
       name: 'Brenda Judon',
@@ -1785,7 +1785,7 @@ export const mockPackages: Package[] = [
       origin: 'Houston, Texas, USA',
       destination: 'Missouri, USA',
       comment: 'Handle with care',
-      mode: 'Road',
+      mode: 'Road'
     },
     // Y-M-D
     package_received_date: '2025-10-10',
@@ -1808,7 +1808,7 @@ export const mockPackages: Package[] = [
       name: 'Tonya Wilson',
       address: 'Dubai',
       contact_number: '603-685-****',
-      email: '*******',
+      email: '*******'
     },
     recipient: {
       name: 'THOMAS M. FUSINSKI',
@@ -1831,7 +1831,7 @@ export const mockPackages: Package[] = [
       origin: 'Dubai',
       destination: 'Aventura, Florida, USA',
       comment: 'Handle with care',
-      mode: 'Road',
+      mode: 'Road'
     },
     // Y-M-D
     package_received_date: '2025-10-22',
@@ -1847,4 +1847,50 @@ export const mockPackages: Package[] = [
     estimated_delivery_time: '22:00:00',
     time_zone: 'America/Chicago'
   },
+  {
+    package_id: 'PKG041',
+    dateCreated: '10/27/2025', // m/d/y
+    sender: {
+      name: 'UNITED DISTRICT COURT',
+      address: 'Sa,Tx',
+      contact_number: '210-848-****',
+      email: 'ji**9@gmail.com'
+    },
+    recipient: {
+      name: 'Dexter S Mendoza',
+      address: '******',
+      contact_number: '+1-321-297-****',
+      email: 'de**67@gmail.com'
+    },
+    tracking_number: '726626772882',
+    package_details: {
+      weight_kg: 10,
+      dimensions_cm: {
+        length: 30,
+        width: 20,
+        height: 15
+      },
+      courier: 'Fedex',
+      packages: 'Check',
+      quantity: '1',
+      paymentMode: 'Cash',
+      origin: 'Sa,Tx',
+      destination: '*******',
+      comment: 'Handle with care',
+      mode: 'Road'
+    },
+    // Y-M-D
+    package_received_date: '',
+    package_received_time: '',
+    in_transit_date: '',
+    in_transit_time: '',
+    on_hold_date: '',
+    on_hold_time: '',
+    on_hold_desc: '',
+    out_for_delivery_date: '',
+    out_for_delivery_time: '',
+    estimated_delivery_date: '',
+    estimated_delivery_time: '',
+    time_zone: ''
+  }
 ];
