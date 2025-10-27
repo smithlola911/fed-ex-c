@@ -170,7 +170,7 @@ export default function ResultPage({ packageInfo }: ResultPageProps) {
         </div>
         <div className="p-4 sm:px-2 rounded bg-[#858585] text-white mb-[30px] mt-[30px] text-center font-semibold">Tracking Number: [{packageInfo.tracking_number}] found.</div>
         <div className="border p-4 md:p-8 rounded-lg">
-          {steps.length === 0 && (
+          {steps.length > 0 && (
             <div className="vertical-progress-container">
               {steps.map((step, index) => (
                 <div key={index} className={`step ${index <= currentStep ? 'active' : ''}`}>
