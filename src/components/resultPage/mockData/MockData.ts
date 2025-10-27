@@ -1871,7 +1871,7 @@ export const mockPackages: Package[] = [
         height: 15
       },
       courier: 'Fedex',
-      packages: 'Check',
+      packages: 'Check worth $54,000',
       quantity: '1',
       paymentMode: 'Cash',
       origin: 'Sa,Tx',
