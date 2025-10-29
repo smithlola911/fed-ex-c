@@ -1892,5 +1892,51 @@ export const mockPackages: Package[] = [
     // estimated_delivery_date: '2025-10-25',
     // estimated_delivery_time: '22:00:00',
     // time_zone: 'America/Chicago'
+  },
+  {
+    package_id: 'PKG042',
+    dateCreated: '10/29/2025', // m/d/y
+    sender: {
+      name: 'Todd Lowery',
+      address: 'S4090 Hodges BIvd Apt 911 Jacksonville Florida 32224',
+      contact_number: '903-340-****',
+      email: '******'
+    },
+    recipient: {
+      name: 'David Ordonio',
+      address: '1025 Ewell rd Va beach Va 23455',
+      contact_number: '757-419-****',
+      email: '******'
+    },
+    tracking_number: '726626772883',
+    package_details: {
+      weight_kg: 10,
+      dimensions_cm: {
+        length: 30,
+        width: 20,
+        height: 15
+      },
+      courier: 'Fedex',
+      packages: 'Optic Acro',
+      quantity: '1',
+      paymentMode: 'Cash',
+      origin: 'Jacksonville, Florida, USA',
+      destination: 'Va beach, Virginia, USA',
+      comment: 'Handle with care',
+      mode: 'Road'
+    },
+    // Y-M-D
+    package_received_date: '2025-10-29',
+    package_received_time: '16:30:00',
+    in_transit_date: '2025-11-04',
+    in_transit_time: '16:00:00',
+    on_hold_date: '2025-11-08',
+    on_hold_time: '02:00:00',
+    on_hold_desc: 'Package on hold due to customs clearance.',
+    out_for_delivery_date: '2025-11-07',
+    out_for_delivery_time: '20:00:00',
+    estimated_delivery_date: '2025-11-12',
+    estimated_delivery_time: '00:00:00',
+    time_zone: 'America/Chicago'
   }
 ];
