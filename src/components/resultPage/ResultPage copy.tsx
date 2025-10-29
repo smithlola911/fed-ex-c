@@ -37,7 +37,7 @@ export default function ResultPage({ packageInfo }: ResultPageProps) {
     const formatDatetime = (date: string | undefined, time: string | undefined) => {
       return date && time ? `${date}T${time}` : '';
     };
-  
+
     const stepList = [
       {
         label: 'Package Received By FEDEX',
@@ -48,27 +48,27 @@ export default function ResultPage({ packageInfo }: ResultPageProps) {
         datetime: formatDatetime(packageInfo.in_transit_date, packageInfo.in_transit_time)
       }
     ];
-  
+
     // Check if we have on_hold data
     const hasOnHoldData = !!packageInfo.on_hold_date && !!packageInfo.on_hold_time;
-  
+
     // Only add the "On Hold" step if both date and time are available AND the time has been reached
     if (hasOnHoldData && onHoldTimeReached) {
       stepList.push({
         label: 'On Hold',
         datetime: formatDatetime(packageInfo.on_hold_date, packageInfo.on_hold_time)
       });
-  
+
       // If On Hold is reached, hide "Out for Delivery"
       return stepList;
     }
-  
+
     // Only add the "Out for Delivery" step if On Hold was not reached
     stepList.push({
       label: 'Out for Delivery',
       datetime: formatDatetime(packageInfo.out_for_delivery_date, packageInfo.out_for_delivery_time)
     });
-  
+
     // Add "Delivered" step if there's no on_hold data
     if (!hasOnHoldData) {
       stepList.push({
@@ -76,10 +76,9 @@ export default function ResultPage({ packageInfo }: ResultPageProps) {
         datetime: formatDatetime(packageInfo.estimated_delivery_date, packageInfo.estimated_delivery_time)
       });
     }
-  
+
     return stepList;
   }, [packageInfo, onHoldTimeReached]);
-  
 
   const calculateStep = useCallback(() => {
     const now = currentTime.getTime();
@@ -281,7 +280,9 @@ export default function ResultPage({ packageInfo }: ResultPageProps) {
               </div>
               <div className="bg-gray-100 flex items-center justify-between">
                 <div className="w-full p-3 py-2 border-r">Estimated Delivery Date</div>
-                <div className="w-full p-3 py-2">{formatDate(packageInfo.estimated_delivery_date)}</div>
+                <div className="w-full p-3 py-2">
+                  {packageInfo.estimated_delivery_date && packageInfo.estimated_delivery_time ? formatDate(`${packageInfo.estimated_delivery_date}T${packageInfo.estimated_delivery_time}`) : ''}
+                </div>
               </div>
               <div className="bg-[#858585] text-white flex items-center justify-between">
                 <div className="w-full p-3 py-2 border-r">Estimated Delivery Time</div>
