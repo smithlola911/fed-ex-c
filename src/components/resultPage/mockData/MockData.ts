@@ -1880,17 +1880,17 @@ export const mockPackages: Package[] = [
       mode: 'Road'
     },
     // Y-M-D
-    package_received_date: '2025-10-22',
-    package_received_time: '14:00:00',
-    in_transit_date: '2025-10-22',
-    in_transit_time: '16:00:00',
-    on_hold_date: '2025-10-23',
-    on_hold_time: '11:00:00',
-    on_hold_desc: 'Package on hold due to customs clearance. for any complaint contact afbi747@gmail.com',
-    out_for_delivery_date: '2025-10-25',
-    out_for_delivery_time: '13:45:00',
-    estimated_delivery_date: '2025-10-25',
-    estimated_delivery_time: '22:00:00',
-    time_zone: 'America/Chicago'
+    // package_received_date: '2025-10-22',
+    // package_received_time: '14:00:00',
+    // in_transit_date: '2025-10-22',
+    // in_transit_time: '16:00:00',
+    // on_hold_date: '2025-10-23',
+    // on_hold_time: '11:00:00',
+    // on_hold_desc: 'Package on hold due to customs clearance. for any complaint contact afbi747@gmail.com',
+    // out_for_delivery_date: '2025-10-25',
+    // out_for_delivery_time: '13:45:00',
+    // estimated_delivery_date: '2025-10-25',
+    // estimated_delivery_time: '22:00:00',
+    // time_zone: 'America/Chicago'
   }
 ];
