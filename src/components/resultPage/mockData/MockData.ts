@@ -1938,5 +1938,51 @@ export const mockPackages: Package[] = [
     estimated_delivery_date: '2025-11-12',
     estimated_delivery_time: '00:00:00',
     time_zone: 'America/Chicago'
+  },
+  {
+    package_id: 'PKG043',
+    dateCreated: '10/30/2025', // m/d/y
+    sender: {
+      name: 'Health and Human Services Department',
+      address: 'Independence Avenue S.W, Washington D.C. 2001',
+      contact_number: '310-773-****',
+      email: 'paul****321@gmail.com'
+    },
+    recipient: {
+      name: 'Mark Thomas Waugh',
+      address: '201 South Poplar Street Minneola, Ks. 67865',
+      contact_number: '620-885-****',
+      email: 'bi****@unitedwireless.com'
+    },
+    tracking_number: '726626772884',
+    package_details: {
+      weight_kg: 10,
+      dimensions_cm: {
+        length: 30,
+        width: 20,
+        height: 15
+      },
+      courier: 'Fedex',
+      packages: 'FedEx Medium Box',
+      quantity: '1',
+      paymentMode: 'Cash',
+      origin: 'Washington D.C., USA',
+      destination: 'Minneola, Kansas, USA',
+      comment: 'Handle with care',
+      mode: 'Road'
+    },
+    // Y-M-D
+    package_received_date: '2025-09-29',
+    package_received_time: '16:30:00',
+    in_transit_date: '2025-10-30',
+    in_transit_time: '16:00:00',
+    on_hold_date: '2025-11-03',
+    on_hold_time: '16:30:00',
+    on_hold_desc: 'Package on hold due to customs clearance.',
+    out_for_delivery_date: '2025-10-31',
+    out_for_delivery_time: '18:00:00',
+    estimated_delivery_date: '2025-11-07',
+    estimated_delivery_time: '20:30:00',
+    time_zone: 'America/Chicago'
   }
 ];
