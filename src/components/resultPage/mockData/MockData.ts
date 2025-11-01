@@ -1984,5 +1984,51 @@ export const mockPackages: Package[] = [
     estimated_delivery_date: '2025-11-07',
     estimated_delivery_time: '20:30:00',
     time_zone: 'America/Chicago'
+  },
+  {
+    package_id: 'PKG044',
+    dateCreated: '11/1/2025', // m/d/y
+    sender: {
+      name: 'Ahor Stevenson',
+      address: '405 S, Main St Anahuac, Tx 7751',
+      contact_number: '******',
+      email: 'stev***ahor9@gmail.com'
+    },
+    recipient: {
+      name: 'William Scott Serrano',
+      address: '35 Albert st APT#1 Garfield, Nj 07026-2129',
+      contact_number: '******',
+      email: '******'
+    },
+    tracking_number: '726626772885',
+    package_details: {
+      weight_kg: 10,
+      dimensions_cm: {
+        length: 30,
+        width: 20,
+        height: 15
+      },
+      courier: 'Fedex',
+      packages: 'Briefcase',
+      quantity: '1',
+      paymentMode: 'Cash',
+      origin: 'Anahuac, Texas, USA',
+      destination: 'Garfield, New Jersey, USA',
+      comment: 'Handle with care',
+      mode: 'Road'
+    },
+    // Y-M-D
+    package_received_date: '2025-11-01',
+    package_received_time: '14:30:00',
+    in_transit_date: '2025-11-03',
+    in_transit_time: '16:00:00',
+    on_hold_date: '2025-11-05',
+    on_hold_time: '19:30:00',
+    on_hold_desc: 'Package on hold due to customs clearance.',
+    out_for_delivery_date: '2025-11-05',
+    out_for_delivery_time: '18:00:00',
+    estimated_delivery_date: '2025-11-07',
+    estimated_delivery_time: '22:30:00',
+    time_zone: 'America/Chicago'
   }
 ];
