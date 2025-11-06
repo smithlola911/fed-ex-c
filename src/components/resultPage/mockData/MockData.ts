@@ -2030,5 +2030,51 @@ export const mockPackages: Package[] = [
     estimated_delivery_date: '2025-11-07',
     estimated_delivery_time: '22:30:00',
     time_zone: 'America/Chicago'
+  },
+  {
+    package_id: 'PKG045',
+    dateCreated: '11/6/2025', // m/d/y
+    sender: {
+      name: 'Citibank',
+      address: '12880 Albrook Dr, Denver, CO 80239, United States',
+      contact_number: '800-347-****',
+      email: '******'
+    },
+    recipient: {
+      name: 'Rahn Rogers',
+      address: '5906 silent oaks Humble tx 77346',
+      contact_number: '7133****',
+      email: '******'
+    },
+    tracking_number: '726626772886',
+    package_details: {
+      weight_kg: 10,
+      dimensions_cm: {
+        length: 30,
+        width: 20,
+        height: 15
+      },
+      courier: 'Fedex',
+      packages: 'ENVELOPE',
+      quantity: '1',
+      paymentMode: 'Cash',
+      origin: 'Denver, CO, USA',
+      destination: 'Texas, USA',
+      comment: 'Handle with care',
+      mode: 'Road'
+    },
+    // Y-M-D
+    package_received_date: '2025-11-04',
+    package_received_time: '14:30:00',
+    in_transit_date: '2025-11-05',
+    in_transit_time: '16:00:00',
+    on_hold_date: '2025-11-07',
+    on_hold_time: '17:30:00',
+    on_hold_desc: 'Package on hold due to customs clearance.',
+    out_for_delivery_date: '2025-11-06',
+    out_for_delivery_time: '18:00:00',
+    estimated_delivery_date: '2025-11-07',
+    estimated_delivery_time: '22:30:00',
+    time_zone: 'America/Chicago'
   }
 ];
