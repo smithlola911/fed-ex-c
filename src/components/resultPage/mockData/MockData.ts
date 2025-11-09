@@ -2068,13 +2068,13 @@ export const mockPackages: Package[] = [
     package_received_time: '14:30:00',
     in_transit_date: '2025-11-05',
     in_transit_time: '16:00:00',
-    on_hold_date: '2025-11-07',
-    on_hold_time: '17:30:00',
-    on_hold_desc: 'Package on hold due to customs clearance.',
+    // on_hold_date: '2025-11-07',
+    // on_hold_time: '17:30:00',
+    // on_hold_desc: 'Package on hold due to customs clearance.',
     out_for_delivery_date: '2025-11-06',
     out_for_delivery_time: '18:00:00',
-    estimated_delivery_date: '2025-11-07',
-    estimated_delivery_time: '22:30:00',
+    estimated_delivery_date: '2025-11-09',
+    estimated_delivery_time: '23:00:00',
     time_zone: 'America/Chicago'
   }
 ];
