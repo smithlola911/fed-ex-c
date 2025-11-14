@@ -2147,8 +2147,8 @@ export const mockPackages: Package[] = [
         height: 15
       },
       courier: 'Fedex',
-      packages: 'ENVELOPE',
-      quantity: '1',
+      packages: 'Boxes',
+      quantity: '2',
       paymentMode: 'Cash',
       origin: 'Berlin, Germany',
       destination: 'Speyer, Germany',
