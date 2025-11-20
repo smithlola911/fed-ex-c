@@ -2168,5 +2168,51 @@ export const mockPackages: Package[] = [
     estimated_delivery_date: '2025-11-19',
     estimated_delivery_time: '01:15:00',
     time_zone: 'America/Chicago'
+  },
+  {
+    package_id: 'PKG048',
+    dateCreated: '11/20/2025', // m/d/y
+    sender: {
+      name: 'Southway Builders Inc',
+      address: '⁠1318 E Fort Ave, Ste 1, Baltimore, MD 21230',
+      contact_number: '410-332-****',
+      email: '******'
+    },
+    recipient: {
+      name: 'Russ Mills',
+      address: '9197 Highway 44 Middleton ID 83644',
+      contact_number: '******',
+      email: 'woryerwulf@gmail.com'
+    },
+    tracking_number: '726626772889',
+    package_details: {
+      weight_kg: 10,
+      dimensions_cm: {
+        length: 30,
+        width: 20,
+        height: 15
+      },
+      courier: 'Fedex',
+      packages: 'safe cash box / Documents',
+      quantity: '1',
+      paymentMode: 'Cash',
+      origin: 'Bertimore, MD, USA',
+      destination: 'Middleton ID, USA',
+      comment: 'Handle with care',
+      mode: 'Road'
+    },
+    // Y-M-D
+    package_received_date: '2025-11-18',
+    package_received_time: '14:30:00',
+    in_transit_date: '2025-11-21',
+    in_transit_time: '16:00:00',
+    on_hold_date: '2025-11-21',
+    on_hold_time: '08:00:00',
+    on_hold_desc: 'Package on hold due to customs clearance.',
+    out_for_delivery_date: '2025-11-23',
+    out_for_delivery_time: '18:00:00',
+    estimated_delivery_date: '2025-11-24',
+    estimated_delivery_time: '23:30:00',
+    time_zone: 'America/Chicago'
   }
 ];
