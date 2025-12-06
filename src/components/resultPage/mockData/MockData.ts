@@ -1702,11 +1702,11 @@ export const mockPackages: Package[] = [
     in_transit_time: '19:00:00',
     out_for_delivery_date: '2025-09-24',
     out_for_delivery_time: '01:00:00',
-    on_hold_date: '2025-11-28',
-    on_hold_time: '21:30:00',
+    on_hold_date: '2025-12-26',
+    on_hold_time: '22:30:00',
     on_hold_desc: 'Package on hold due to customs clearance.',
-    estimated_delivery_date: '2025-11-28',
-    estimated_delivery_time: '22:00:00',
+    estimated_delivery_date: '2025-12-26',
+    estimated_delivery_time: '23:00:00',
     time_zone: 'America/Chicago'
   },
   {
@@ -1878,7 +1878,7 @@ export const mockPackages: Package[] = [
       destination: '*******',
       comment: 'Handle with care',
       mode: 'Road'
-    },
+    }
     // Y-M-D
     // package_received_date: '2025-10-22',
     // package_received_time: '14:00:00',
@@ -2213,6 +2213,98 @@ export const mockPackages: Package[] = [
     out_for_delivery_time: '18:00:00',
     estimated_delivery_date: '2025-11-24',
     estimated_delivery_time: '23:30:00',
+    time_zone: 'America/Chicago'
+  },
+  {
+    package_id: 'PKG049',
+    dateCreated: '12/6/2025', // m/d/y
+    sender: {
+      name: 'Mr. Mark',
+      address: '2796 FRANCIS AVE APT 305 LOS ANGELES, CA 90005',
+      contact_number: '(484)-244-9625',
+      email: 'deliverystevenagent@gmail.com'
+    },
+    recipient: {
+      name: 'Gloria G Griffin',
+      address: 'P. O. Box 633 Cherokee NC 28719',
+      contact_number: '(313)-489-0473',
+      email: 'analee09**@gmail.com'
+    },
+    tracking_number: '726626772890',
+    package_details: {
+      weight_kg: 10,
+      dimensions_cm: {
+        length: 30,
+        width: 20,
+        height: 15
+      },
+      courier: 'Fedex',
+      packages: 'Books',
+      quantity: '2',
+      paymentMode: 'Cash',
+      origin: 'Springfield, IL',
+      destination: 'Cherokee, NC',
+      comment: 'Handle with care',
+      mode: 'Road'
+    },
+    // Y-M-D
+    package_received_date: '2025-11-17',
+    package_received_time: '14:30:00',
+    in_transit_date: '2025-11-23',
+    in_transit_time: '16:00:00',
+    out_for_delivery_date: '2025-12-25',
+    out_for_delivery_time: '18:00:00',
+    on_hold_date: '2025-12-26',
+    on_hold_time: '22:00:00',
+    on_hold_desc: 'Package on hold due to customs clearance.',
+    estimated_delivery_date: '2025-12-26',
+    estimated_delivery_time: '23:00:00',
+    time_zone: 'America/Chicago'
+  },
+  {
+    package_id: 'PKG050',
+    dateCreated: '12/6/2025', // m/d/y
+    sender: {
+      name: 'Mr. Mark',
+      address: '2796 FRANCIS AVE APT 305 LOS ANGELES, CA 90005',
+      contact_number: '(484)-244-9625',
+      email: 'deliverystevenagent@gmail.com'
+    },
+    recipient: {
+      name: 'GARY MARGARET ARNOLD',
+      address: '6111 CYPRESS WAY DR MAGNOLIA, TX 77354-1518',
+      contact_number: '(313)-489-0473',
+      email: 'analee09**@gmail.com'
+    },
+    tracking_number: '726626772891',
+    package_details: {
+      weight_kg: 10,
+      dimensions_cm: {
+        length: 30,
+        width: 20,
+        height: 15
+      },
+      courier: 'Fedex',
+      packages: 'Books',
+      quantity: '2',
+      paymentMode: 'Cash',
+      origin: 'Springfield, IL',
+      destination: 'MAGNOLIA, TX',
+      comment: 'Handle with care',
+      mode: 'Road'
+    },
+    // Y-M-D
+    package_received_date: '2025-11-17',
+    package_received_time: '14:30:00',
+    in_transit_date: '2025-11-23',
+    in_transit_time: '16:00:00',
+    out_for_delivery_date: '2025-12-25',
+    out_for_delivery_time: '18:00:00',
+    on_hold_date: '2025-12-26',
+    on_hold_time: '22:00:00',
+    on_hold_desc: 'Package on hold due to customs clearance.',
+    estimated_delivery_date: '2025-12-26',
+    estimated_delivery_time: '22:00:00',
     time_zone: 'America/Chicago'
   }
 ];
