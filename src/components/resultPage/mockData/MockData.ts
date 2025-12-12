@@ -1674,7 +1674,7 @@ export const mockPackages: Package[] = [
     },
     recipient: {
       name: 'Sharon k',
-      address: '1335 E Michigan Ave Saline, MI 48176',
+      address: '3154 Cobblestone Ridge Tecumseh MI 49286',
       contact_number: '(517)-514-1695',
       email: 'Sharonhawley640@email.com'
     },
@@ -1702,10 +1702,10 @@ export const mockPackages: Package[] = [
     in_transit_time: '19:00:00',
     out_for_delivery_date: '2025-09-24',
     out_for_delivery_time: '01:00:00',
-    on_hold_date: '2025-12-26',
+    on_hold_date: '2025-12-23',
     on_hold_time: '22:30:00',
     on_hold_desc: 'Package on hold due to customs clearance.',
-    estimated_delivery_date: '2025-12-26',
+    estimated_delivery_date: '2025-12-23',
     estimated_delivery_time: '23:00:00',
     time_zone: 'America/Chicago'
   },
@@ -2250,14 +2250,14 @@ export const mockPackages: Package[] = [
     // Y-M-D
     package_received_date: '2025-11-17',
     package_received_time: '14:30:00',
-    in_transit_date: '2025-11-23',
+    in_transit_date: '2025-11-21',
     in_transit_time: '16:00:00',
-    out_for_delivery_date: '2025-12-25',
+    out_for_delivery_date: '2025-12-22',
     out_for_delivery_time: '18:00:00',
-    on_hold_date: '2025-12-26',
+    on_hold_date: '2025-12-23',
     on_hold_time: '22:00:00',
     on_hold_desc: 'Package on hold due to customs clearance.',
-    estimated_delivery_date: '2025-12-26',
+    estimated_delivery_date: '2025-12-23',
     estimated_delivery_time: '23:00:00',
     time_zone: 'America/Chicago'
   },
@@ -2296,14 +2296,14 @@ export const mockPackages: Package[] = [
     // Y-M-D
     package_received_date: '2025-11-17',
     package_received_time: '14:30:00',
-    in_transit_date: '2025-11-23',
+    in_transit_date: '2025-11-21',
     in_transit_time: '16:00:00',
-    out_for_delivery_date: '2025-12-25',
+    out_for_delivery_date: '2025-12-22',
     out_for_delivery_time: '18:00:00',
-    on_hold_date: '2025-12-26',
+    on_hold_date: '2025-12-23',
     on_hold_time: '22:00:00',
     on_hold_desc: 'Package on hold due to customs clearance.',
-    estimated_delivery_date: '2025-12-26',
+    estimated_delivery_date: '2025-12-23',
     estimated_delivery_time: '22:00:00',
     time_zone: 'America/Chicago'
   }
