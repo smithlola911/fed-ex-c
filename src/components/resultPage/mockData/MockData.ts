@@ -2306,5 +2306,51 @@ export const mockPackages: Package[] = [
     estimated_delivery_date: '2025-12-23',
     estimated_delivery_time: '22:00:00',
     time_zone: 'America/Chicago'
+  },
+  {
+    package_id: 'PKG051',
+    dateCreated: '1/8/2025', // m/d/y
+    sender: {
+      name: 'Brazzer pornography Ltd ',
+      address: 'Quebec , Canada',
+      contact_number: '******',
+      email: 'www.brazzers.com'
+    },
+    recipient: {
+      name: 'Oliver Bruce Alston',
+      address: '219 Kipling Dr Cocoa Florida',
+      contact_number: '(321)-698-1824',
+      email: '******'
+    },
+    tracking_number: '726626772892',
+    package_details: {
+      weight_kg: 10,
+      dimensions_cm: {
+        length: 30,
+        width: 20,
+        height: 15
+      },
+      courier: 'Fedex',
+      packages: 'Briefcase Cash',
+      quantity: '1',
+      paymentMode: 'Cash',
+      origin: 'Quebec , Canada',
+      destination: 'Florida, USA',
+      comment: 'Handle with care',
+      mode: 'Road'
+    },
+    // Y-M-D
+    package_received_date: '2026-01-09',
+    package_received_time: '14:30:00',
+    in_transit_date: '2026-01-11',
+    in_transit_time: '16:00:00',
+    out_for_delivery_date: '2026-02-05',
+    out_for_delivery_time: '18:00:00',
+    on_hold_date: '2026-02-05',
+    on_hold_time: '23:00:00',
+    on_hold_desc: 'Package on hold due to customs clearance.',
+    estimated_delivery_date: '2026-02-05',
+    estimated_delivery_time: '24:00:00',
+    time_zone: 'America/Chicago'
   }
 ];
