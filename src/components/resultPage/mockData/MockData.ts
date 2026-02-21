@@ -2352,5 +2352,51 @@ export const mockPackages: Package[] = [
     estimated_delivery_date: '2026-02-05',
     estimated_delivery_time: '24:00:00',
     time_zone: 'America/Chicago'
+  },
+   {
+    package_id: 'PKG052',
+    dateCreated: '2/21/2026', // m/d/y
+    sender: {
+      name: 'Dawson Anderson',
+      address: '14894 US-19, Thomasville, GA 31757, United States',
+      contact_number: '******',
+      email: '******'
+    },
+    recipient: {
+      name: 'Teddy Leon Jr',
+      address: '1401 Manorwyck Place Apt300 Chesapeake VA 23320',
+      contact_number: '******',
+      email: '******'
+    },
+    tracking_number: '726626772893',
+    package_details: {
+      weight_kg: 10,
+      dimensions_cm: {
+        length: 30,
+        width: 20,
+        height: 15
+      },
+      courier: 'Fedex',
+      packages: '2 Briefcase',
+      quantity: '2',
+      paymentMode: 'Cash',
+      origin: 'Thomasville, GA, USA',
+      destination: 'Chesapeake, VA, USA',
+      comment: 'Handle with care',
+      mode: 'Road'
+    },
+    // Y-M-D
+    package_received_date: '2026-02-23',
+    package_received_time: '16:30:00',
+    in_transit_date: '2026-02-24',
+    in_transit_time: '19:00:00',
+    out_for_delivery_date: '2026-02-24',
+    out_for_delivery_time: '21:00:00',
+    on_hold_date: '2026-02-25',
+    on_hold_time: '22:00:00',
+    on_hold_desc: 'Package on hold due to customs clearance.',
+    estimated_delivery_date: '2026-02-26',
+    estimated_delivery_time: '24:00:00',
+    time_zone: 'America/Chicago'
   }
 ];
