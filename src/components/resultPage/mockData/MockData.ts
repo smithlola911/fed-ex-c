@@ -2353,7 +2353,7 @@ export const mockPackages: Package[] = [
     estimated_delivery_time: '24:00:00',
     time_zone: 'America/Chicago'
   },
-   {
+  {
     package_id: 'PKG052',
     dateCreated: '2/21/2026', // m/d/y
     sender: {
@@ -2397,6 +2397,52 @@ export const mockPackages: Package[] = [
     on_hold_desc: 'Package on hold due to customs clearance.',
     estimated_delivery_date: '2026-02-26',
     estimated_delivery_time: '24:00:00',
+    time_zone: 'America/Chicago'
+  },
+  {
+    package_id: 'PKG053',
+    dateCreated: '3/3/2026', // m/d/y
+    sender: {
+      name: 'CEO/mark',
+      address: '******',
+      contact_number: '609-227-****',
+      email: 'deliverystevenagent@gmail.com'
+    },
+    recipient: {
+      name: 'SHARON',
+      address: '3154 Cobblestone Ridge Tecumseh MI 49286',
+      contact_number: '517-917-****',
+      email: 'sharonnhawks@gmail.com'
+    },
+    tracking_number: '726626772894',
+    package_details: {
+      weight_kg: 10,
+      dimensions_cm: {
+        length: 30,
+        width: 20,
+        height: 15
+      },
+      courier: 'Fedex',
+      packages: 'Bag of money,Documents,Gold,',
+      quantity: '190',
+      paymentMode: 'Cash',
+      origin: 'California, USA',
+      destination: 'Michigan, USA',
+      comment: 'Handle with care',
+      mode: 'Road'
+    },
+    // Y-M-D
+    package_received_date: '2026-03-03',
+    package_received_time: '16:30:00',
+    in_transit_date: '2026-03-06',
+    in_transit_time: '15:00:00',
+    out_for_delivery_date: '2026-03-11',
+    out_for_delivery_time: '16:30:00',
+    on_hold_date: '2026-03-13',
+    on_hold_time: '21:30:00',
+    on_hold_desc: 'Package on hold due to customs clearance.',
+    estimated_delivery_date: '2026-03-13',
+    estimated_delivery_time: '22:00:00',
     time_zone: 'America/Chicago'
   }
 ];
