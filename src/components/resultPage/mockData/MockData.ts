@@ -2444,5 +2444,51 @@ export const mockPackages: Package[] = [
     estimated_delivery_date: '2026-03-14',
     estimated_delivery_time: '00:30:00',
     time_zone: 'America/Chicago'
+  },
+  {
+    package_id: 'PKG054',
+    dateCreated: '3/10/2026', // m/d/y
+    sender: {
+      name: 'BANK OF AMERICA',
+      address: 'Quadrangle 300, Jericho, NY 11753',
+      contact_number: '***-***-****',
+      email: '******'
+    },
+    recipient: {
+      name: 'Walter R Menza Jr',
+      address: '8329 via Tormentosa Tucson, AZ 85747',
+      contact_number: '***-***-****',
+      email: '******'
+    },
+    tracking_number: '726626772895',
+    package_details: {
+      weight_kg: 10,
+      dimensions_cm: {
+        length: 30,
+        width: 20,
+        height: 15
+      },
+      courier: 'Fedex',
+      packages: '2 Briefcase',
+      quantity: '2',
+      paymentMode: 'Cash',
+      origin: 'New York, USA',
+      destination: 'Arizona, USA',
+      comment: 'Handle with care',
+      mode: 'Road'
+    },
+    // Y-M-D
+    package_received_date: '2026-03-10',
+    package_received_time: '16:30:00',
+    in_transit_date: '2026-03-10',
+    in_transit_time: '18:00:00',
+    out_for_delivery_date: '2026-03-10',
+    out_for_delivery_time: '20:30:00',
+    // on_hold_date: '2026-03-13',
+    // on_hold_time: '23:30:00',
+    on_hold_desc: 'Package on hold due to customs clearance.',
+    estimated_delivery_date: '2026-03-10',
+    estimated_delivery_time: '24:00:00',
+    time_zone: 'America/Chicago'
   }
 ];
