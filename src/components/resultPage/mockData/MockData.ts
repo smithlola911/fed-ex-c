@@ -2483,12 +2483,12 @@ export const mockPackages: Package[] = [
     in_transit_date: '2026-03-10',
     in_transit_time: '18:00:00',
     out_for_delivery_date: '2026-03-10',
-    out_for_delivery_time: '20:30:00',
-    // on_hold_date: '2026-03-13',
-    // on_hold_time: '23:30:00',
+    out_for_delivery_time: '22:00:00',
+    on_hold_date: '2026-03-11',
+    on_hold_time: '04:00:00',
     on_hold_desc: 'Package on hold due to customs clearance.',
-    estimated_delivery_date: '2026-03-10',
-    estimated_delivery_time: '24:00:00',
-    time_zone: 'America/Chicago'
+    estimated_delivery_date: '2026-03-11',
+    estimated_delivery_time: '05:00:00',
+    time_zone: 'America/Phoenix'
   }
 ];
