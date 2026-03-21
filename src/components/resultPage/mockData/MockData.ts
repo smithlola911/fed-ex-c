@@ -2410,7 +2410,7 @@ export const mockPackages: Package[] = [
     },
     recipient: {
       name: 'SHARON',
-      address: '3154 Cobblestone Ridge Tecumseh MI 49286',
+      address: '1465 Woodland Drive Saline Michigan',
       contact_number: '517-917-****',
       email: 'sharonnhawks@gmail.com'
     },
